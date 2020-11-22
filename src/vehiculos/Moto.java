@@ -1,0 +1,20 @@
+package vehiculos;
+
+public class Moto extends VehiculoConRuedas {
+
+	public Moto(String modelo, String color) {
+		super(modelo, color);
+	}
+
+	@Override
+	public int getNumeroDeRuedas() {
+		// TODO Auto-generated method stub
+		return 2;
+	}
+
+	@Override
+	public String toString() {
+		return "Moto: " + super.toString();
+	}
+
+}
