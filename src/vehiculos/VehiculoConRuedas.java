@@ -1,25 +1,14 @@
 package vehiculos;
 
-import java.sql.Date;
-
-public abstract class VehiculoConRuedas extends Vehiculo{
+public abstract class VehiculoConRuedas extends Vehiculo {
 		
-		private String matricula;
-		private int cantRuedas;
-		private Date fechaMatriculacion;
+		protected String matricula;
+		private int cantidadRuedas;
 	
-		public abstract Date proximaItv();
+		public abstract String getMatricula();
 		
 		public int getNumeroDeRuedas() {
-			return cantRuedas;
-		}
-		
-		public String getMatricula() {
-			return matricula;
-		}
-		
-		public Date getFechaMatriculacion() {
-			return fechaMatriculacion;
+			return cantidadRuedas;
 		}
 		
 		@Override
@@ -30,21 +19,20 @@ public abstract class VehiculoConRuedas extends Vehiculo{
 		}
 		
 		public VehiculoConRuedas() {
-			this((String) null, (String) null, 0, (String) null, (Date) null);
+			this((String) null, (String) null, 0, (String) null);
 			}
 		
 		public VehiculoConRuedas(String modelo, String color) {
-			this(modelo, color, 0, (String) null, (Date) null);
+			this(modelo, color, 0, (String) null);
 		}
 		
-		public VehiculoConRuedas(String modelo, String color, int cantRuedas) {
-			this(modelo, color, cantRuedas, (String) null, (Date) null );
+		public VehiculoConRuedas(String modelo, String color, int cantidadRuedas) {
+			this(modelo, color, cantidadRuedas, (String) null);
 		}
 		
-		public VehiculoConRuedas(String modelo, String color, int cantRuedas, String matricula, Date fechaMatriculacion) {
+		public VehiculoConRuedas(String modelo, String color, int cantidadRuedas, String matricula) {
 			super(modelo, color);
-			this.cantRuedas = cantRuedas;
+			this.cantidadRuedas = cantidadRuedas;
 			this.matricula = matricula;
-			this.fechaMatriculacion = fechaMatriculacion;
 		}
 }
