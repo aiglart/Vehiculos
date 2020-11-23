@@ -2,10 +2,6 @@ package vehiculos;
 
 public class Moto extends VehiculoConRuedas {
 
-	public String getMatricula() {
-		return super.matricula;
-	}
-	
 	public Moto () {
 		super();
 	}

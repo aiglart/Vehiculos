@@ -2,10 +2,13 @@ package vehiculos;
 
 public abstract class VehiculoConRuedas extends Vehiculo {
 		
-		protected String matricula;
+		private String matricula;
 		private int cantidadRuedas;
 	
-		public abstract String getMatricula();
+		public String getMatricula() {
+			return matricula;
+			
+		}
 		
 		public int getNumeroDeRuedas() {
 			return cantidadRuedas;
