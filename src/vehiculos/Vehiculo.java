@@ -1,6 +1,6 @@
 package vehiculos;
 
-public abstract class Vehiculo {
+public class Vehiculo {
 
 	private static final String MODELO_NO_DISPONIBLE = "N/A";
 	private String modelo;
@@ -15,8 +15,7 @@ public abstract class Vehiculo {
 	}
 
 	protected String getModelo() {
-//		return modelo == null ? MODELO_NO_DISPONIBLE : modelo;
-		return modelo + " (" + getColor() + ")";
+		return modelo == null ? MODELO_NO_DISPONIBLE : modelo + " (" + getColor() + ")";
 	}
 
 	public Vehiculo() {

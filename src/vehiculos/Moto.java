@@ -8,7 +8,6 @@ public class Moto extends VehiculoConRuedas {
 
 	@Override
 	public int getNumeroDeRuedas() {
-		// TODO Auto-generated method stub
 		return 2;
 	}
 

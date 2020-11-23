@@ -86,7 +86,6 @@ public class Coche extends VehiculoConRuedas {
 
 	@Override
 	public int getNumeroDeRuedas() {
-		// TODO Auto-generated method stub
 		return numeroDeRuedas;
 	}
 
