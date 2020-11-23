@@ -12,6 +12,7 @@ public class Coche extends Vehiculo {
 	public Coche() {
 		this("Blanco");
 //		numeroDeRuedas = 4;
+		
 	}
 
 	public Coche(String color) {
