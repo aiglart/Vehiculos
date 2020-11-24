@@ -1,6 +1,7 @@
 package vehiculos;
 
 public abstract class VehiculoConRuedas extends Vehiculo {
+<<<<<<< HEAD
 		
 		private String matricula;
 		private int cantidadRuedas;
@@ -39,3 +40,22 @@ public abstract class VehiculoConRuedas extends Vehiculo {
 			this.matricula = matricula;
 		}
 }
+=======
+
+	public VehiculoConRuedas() {
+		super();
+	}
+
+	public VehiculoConRuedas(String modelo, String color) {
+		super(modelo, color);
+	}
+
+	public abstract int getNumeroDeRuedas();
+
+	@Override
+	public String toString() {
+		return super.toString() + ", " + getNumeroDeRuedas() + " ruedas";
+	}
+
+}
+>>>>>>> 1fa568a36c5e8661f50af259ceb7c762f5acf50c
